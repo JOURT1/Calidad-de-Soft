@@ -1,0 +1,22 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class GestorPuntuacion {
+
+    private static final int PUNTAJE_INICIAL = 0;
+
+    private final Map<String, Integer> puntuaciones = new HashMap<>();
+
+    public void sumarPuntos(String jugador, int puntos) {
+        int nuevoPuntaje = obtenerPuntajeActual(jugador) + puntos;
+        puntuaciones.put(jugador, nuevoPuntaje);
+    }
+
+    public int obtenerPuntos(String jugador) {
+        return obtenerPuntajeActual(jugador);
+    }
+
+    private int obtenerPuntajeActual(String jugador) {
+        return puntuaciones.getOrDefault(jugador, PUNTAJE_INICIAL);
+    }
+}
