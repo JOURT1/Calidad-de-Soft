@@ -26,13 +26,10 @@ public class GestorPuntuacionTest {
     @Test
     void debeRestarPuntosAUnJugador() {
         GestorPuntuacion gestor = new GestorPuntuacion();
-        // Configuramos un estado inicial
         gestor.sumarPuntos("Stefan", 20);
         
-        // Ejecutamos la acción a probar
         gestor.restarPuntos("Stefan", 5);
         
-        // Verificamos el resultado
         assertEquals(15, gestor.obtenerPuntos("Stefan"));
     }
 }
