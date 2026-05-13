@@ -12,6 +12,12 @@ public class GestorPuntuacion {
         puntuaciones.put(jugador, nuevoPuntaje);
     }
 
+    // --- Cycle 2 ---
+    public void restarPuntos(String jugador, int puntos) {
+        int nuevoPuntaje = obtenerPuntajeActual(jugador) - puntos;
+        puntuaciones.put(jugador, nuevoPuntaje);
+    }
+
     public int obtenerPuntos(String jugador) {
         return obtenerPuntajeActual(jugador);
     }
