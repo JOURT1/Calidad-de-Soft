@@ -18,6 +18,11 @@ public class GestorPuntuacion {
         puntuaciones.put(jugador, nuevoPuntaje);
     }
 
+    // --- Cycle 4 ---
+    public void reiniciarPuntos(String jugador) {
+        puntuaciones.put(jugador, PUNTAJE_INICIAL);
+    }
+
     public int obtenerPuntos(String jugador) {
         return obtenerPuntajeActual(jugador);
     }

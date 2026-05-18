@@ -32,4 +32,15 @@ public class GestorPuntuacionTest {
         
         assertEquals(15, gestor.obtenerPuntos("Stefan"));
     }
+
+    // --- Cycle 4 ---
+    @Test
+    void debeReiniciarLosPuntosDeUnJugadorA_cero() {
+        GestorPuntuacion gestor = new GestorPuntuacion();
+        gestor.sumarPuntos("Jhoel", 20);
+
+        gestor.reiniciarPuntos("Jhoel");
+
+        assertEquals(0, gestor.obtenerPuntos("Jhoel"));
+    }
 }

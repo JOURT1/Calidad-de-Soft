@@ -1,1 +1,0 @@
-# Calidad-de-Soft
