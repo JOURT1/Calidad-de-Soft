@@ -33,6 +33,7 @@ public class GestorPuntuacionTest {
         assertEquals(15, gestor.obtenerPuntos("Stefan"));
     }
 
+<<<<<<< HEAD
         // --- Cycle 3 ---
     @Test
     void debeConsultarLaPuntuacionActualDeUnJugador() {
@@ -42,6 +43,8 @@ public class GestorPuntuacionTest {
         assertEquals(50, gestor.obtenerPuntos("Mauricio"));
     }
 
+=======
+>>>>>>> ceb0e97379ae506e9200680f034c048394667cc8
     // --- Cycle 4 ---
     @Test
     void debeReiniciarLosPuntosDeUnJugadorA_cero() {

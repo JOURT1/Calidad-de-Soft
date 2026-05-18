@@ -18,6 +18,7 @@ public class GestorPuntuacion {
         puntuaciones.put(jugador, nuevoPuntaje);
     }
 
+<<<<<<< HEAD
        
     // --- Cycle 3  ---
 public int obtenerPuntos(String jugador) {
@@ -25,6 +26,8 @@ public int obtenerPuntos(String jugador) {
 }
 
 
+=======
+>>>>>>> ceb0e97379ae506e9200680f034c048394667cc8
     // --- Cycle 4 ---
     public void reiniciarPuntos(String jugador) {
         puntuaciones.put(jugador, PUNTAJE_INICIAL);
